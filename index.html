@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/692ee92863.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="block">
+      <div class="container-1">
+        <form id="search" class="d-flex ms-auto">
+          <input
+            type="text"
+            class="form-control me-sm-2"
+            placeholder="Enter a city"
+            id="search-input"
+          />
+          <button type="submit" class="btn btn-outline-dark">Search</button>
+          <button id="current-location" class="btn btn-outline-dark">
+            Current Location 📍
+          </button>
+        </form>
+        <div class="box">
+          <h2 id="current-date">Sunday, January 8th, 4:00pm</h2>
+          <h1 id="city">Gilbert, Az</h1>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="row">
+          <div class="column left">
+            <i class="fa-regular fa-sun icon-big"></i>
+            <p id="description">Sunny</p>
+          </div>
+        </div>
+        <div class="column right">
+          <h2 class="temp" id="main-temp">62°F</h2>
+          <span>
+            <h2 class="extra">Precipitation:0%</h2>
+            <h2 class="extra">Humidity: 4%</h2>
+            <h2 class="extra">Wind: 2 mpg</h2>
+            <h2 class="extra">Humidity:10%</h2>
+          </span>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="card-deck week-weather-container">
+          <div class="row">
+            <div class="col day-weather-container">
+              <h3>Mon</h3>
+              <i class="fa-solid fa-sun icon-small"></i>
+              <br />
+              <h3>61°38°</h3>
+            </div>
+
+            <div class="col day-weather-container">
+              <h3>Tues</h3>
+              <i class="fa-solid fa-sun icon-small"></i>
+              <br />
+              <h3>64°37°</h3>
+            </div>
+
+            <div class="col day-weather-container">
+              <h3>Wed</h3>
+              <i class="fa-solid fa-sun icon-small"></i>
+              <br />
+              <h3>65°/38°</h3>
+            </div>
+
+            <div class="col day-weather-container">
+              <h3>Thur</h3>
+              <i class="fa-solid fa-sun icon-small"></i>
+              <br />
+              <h3>64°41°</h3>
+            </div>
+
+            <div class="col day-weather-container">
+              <h3>Fri</h3>
+              <i class="fa-solid fa-sun icon-small"></i>
+              <br />
+              <h3>66°40°</h3>
+            </div>
+
+            <div class="col day-weather-container">
+              <h3>Sat</h3>
+              <i class="fa-solid fa-sun icon-small"></i>
+              <br />
+              <h3>67°41°</h3>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
